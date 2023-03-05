@@ -4,13 +4,13 @@ import Notiflix from 'notiflix';
 import { fetchCountries } from './partials/js/fetchCountries.js';
 
 const DEBOUNCE_DELAY = 300;
-
 const refs = {
   inputField: document.querySelector('#search-box'),
   countryList: document.querySelector('.country-list'),
   countryInfo: document.querySelector('.country-info'),
 };
 
+refs.inputField.placeholder = 'enter country';
 refs.inputField.addEventListener(
   'input',
   debounce(inputCountry, DEBOUNCE_DELAY)
