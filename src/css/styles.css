@@ -48,9 +48,9 @@ ul {
   transform: translateX(-50%);
   font: inherit;
   padding: 8px 16px;
-  max-width: 320px;
+  width: clamp(250px, 50%, 500px);
   margin-bottom: 24px;
-  border-radius: 50px;
+  border-radius: 25px;
   border: none;
   background-color: aliceblue;
 }
@@ -62,8 +62,6 @@ ul {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-}
-.country-list li {
 }
 
 .country-info {
