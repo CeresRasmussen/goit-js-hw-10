@@ -15,7 +15,7 @@ body {
 }
 h1 {
   position: relative;
-  color: azure;
+  color: aliceblue;
   text-align: center;
   z-index: 999;
 }
@@ -52,12 +52,9 @@ ul {
   margin-bottom: 24px;
   border-radius: 50px;
   border: none;
-  background-color: #cdc8c8;
+  background-color: aliceblue;
 }
 
-/* #search-box::placeholder {
-  color: #212121;
-} */
 .country-list {
   color: aliceblue;
   display: flex;
@@ -74,7 +71,6 @@ ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  /* top: 25vh; */
   left: 50%;
   transform: translateX(-50%);
 }
