@@ -40,6 +40,7 @@ function countries(data) {
   }
   refs.countryInfo.innerHTML = '';
   refs.countryList.style.display = 'block';
+  refs.countryInfo.style.display = 'none';
   const list = data
     .map(country => {
       return `
@@ -61,6 +62,7 @@ function moreThenTenCountry() {
 }
 function searchedCountry(country) {
   refs.countryList.style.display = 'none';
+  refs.countryInfo.style.display = 'block';
   refs.countryInfo.innerHTML = `
                 <h2><img src="${country.flag}" alt="${
     country.name
